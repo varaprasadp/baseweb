@@ -1,5 +1,5 @@
 {
-  "name": "baseweb",
+  "name": "@varaprasadp/baseweb",
   "version": "0.0.1",
   "description": "Web component library",
   "main": "dist/cjs/index.js",
@@ -11,7 +11,9 @@
   "type": "module",
   "scripts": {
     "start": "react-scripts start",
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "prasad",
   "license": "ISC",
@@ -19,11 +21,27 @@
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
+    "@storybook/addon-essentials": "^7.6.3",
+    "@storybook/addon-interactions": "^7.6.3",
+    "@storybook/addon-links": "^7.6.3",
+    "@storybook/addon-onboarding": "^1.0.9",
+    "@storybook/blocks": "^7.6.3",
+    "@storybook/react": "^7.6.3",
+    "@storybook/react-webpack5": "^7.6.3",
+    "@storybook/test": "^7.6.3",
     "@types/react": "^18.2.42",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^4.6.1",
     "rollup-plugin-dts": "^6.1.0",
+    "storybook": "^7.6.3",
     "tslib": "^2.6.2",
     "typescript": "^5.3.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/varaprasadp"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.1"
   }
 }
